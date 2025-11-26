@@ -12,11 +12,13 @@ Display usage information and ask for input:
 **Usage:** `/explain <target>`
 
 **Examples:**
+
 - `/explain src/auth/login.ts` - Explain a file
 - `/explain handleAuthentication` - Explain a function
 - `/explain src/services/` - Explain a module/directory
 
 **Workflow:**
+
 1. Analyze the specified code target
 2. Extract key concepts, dependencies, relationships
 3. Generate documentation-style explanation
@@ -29,7 +31,8 @@ Ask the user: "What file, function, or directory would you like me to explain?"
 
 **If `$ARGUMENTS` is provided:**
 
-Generate a comprehensive explanation of the specified code. Creates documentation-style output with Mermaid diagrams for complex flows.
+Generate a comprehensive explanation of the specified code. Creates documentation-style output with
+Mermaid diagrams for complex flows.
 
 ## Configuration
 
@@ -102,6 +105,7 @@ Generate a comprehensive explanation of the specified code. Creates documentatio
    Choose the appropriate diagram type:
 
    **Flowchart** - For control flow, algorithms, decision trees:
+
    ```mermaid
    flowchart TD
        A[Start] --> B{Condition}
@@ -112,6 +116,7 @@ Generate a comprehensive explanation of the specified code. Creates documentatio
    ```
 
    **Sequence Diagram** - For interactions between components:
+
    ```mermaid
    sequenceDiagram
        participant Client
@@ -124,6 +129,7 @@ Generate a comprehensive explanation of the specified code. Creates documentatio
    ```
 
    **Class Diagram** - For OOP structures and relationships:
+
    ```mermaid
    classDiagram
        class User {
@@ -136,6 +142,7 @@ Generate a comprehensive explanation of the specified code. Creates documentatio
    ```
 
    **State Diagram** - For state machines:
+
    ```mermaid
    stateDiagram-v2
        [*] --> Idle

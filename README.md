@@ -14,7 +14,7 @@ ln -s <clone-path>/command-explain/explain.md ~/.claude/commands/explain.md
 
 ## Usage
 
-```
+```text
 /explain src/auth/login.ts          # Explain a file
 /explain handleAuthentication       # Explain a function
 /explain src/services/              # Explain a module/directory
